@@ -103,10 +103,14 @@ function Summ(a, b) {
     else{
         a += b;
         let d = String(a);
+        if (d.length>9){
+            return 'error'
+        }else{
         a = cutDisplay(d);
         a = parseFloat(a);
         return a;
     }
+}
 
 }
 
