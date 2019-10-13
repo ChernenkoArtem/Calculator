@@ -147,7 +147,7 @@ function divide(a, b) {
 }
 
 function multiply(a, b) {
-    if(a == null || b == null){
+   if(a == null || b == null){
         return false;
     }
     if(typeof a !== 'number' || typeof b !== 'number'){
@@ -159,9 +159,13 @@ function multiply(a, b) {
     else{
         a *= b;
         let d = String(a);
+        if (d.length>9){
+            return 'error'
+        }else{
         a = cutDisplay(d);
         a = parseFloat(a);
         return a;
+    }
     }
 }
 
