@@ -4,7 +4,7 @@ describe("function summ", function() {
         const a = 10;
          const b = 23;
          const exp = 33;
-         const act = Summ(a, b);
+         const act = summ(a, b);
 
         assert.equal(act, exp);
 });
